@@ -10,15 +10,15 @@ To train the model we have used `PyTorch`. And for loading datasets and models w
 
 The model can be found in huggingface: https://huggingface.co/mhabrar/BitfestTeamExpelledSolutionMode.
 
-The model was trained for 10 minutes with 1000 steps on a T4 GPU on Google Colab with a learning rate of 2e-5. Since we didn't get anough time to train the model, it's accurary is pretty poor actually :(
+The model was trained for 10 minutes with 1000 steps on a T4 GPU on Google Colab with a learning rate of 2e-5. Since we didn't get enough time to train the model, it's accurary is pretty poor actually :(
 
-After training the loss was `0.85`, which is pretty high! (Again not enough time, not enough epochs! 2-3 epochs would have pulled out better results.)
+After training, the loss was `0.85`, which is pretty high! (Again not enough time, not enough epochs! 2-3 epochs would have pulled out better results.)
 
 Here you can see the User Input and User Output Demo:
 
 ![alt](./images/model_evaluation.png)
 
-Here is the training parameters used to train this model:
+Here are the training parameters used to train this model:
 
 ```
 training_args = Seq2SeqTrainingArguments(
